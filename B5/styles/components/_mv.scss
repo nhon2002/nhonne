@@ -1,0 +1,36 @@
+.mv{
+  background-color: var(--color1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 18vw 0;
+  @include pc{
+    padding: 140px 0;
+  }
+  &__bg{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    width: 100%;
+    @include pc{
+      top: 25%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__pic{
+    margin: 5vw auto;
+    width: 70vw;
+    height: 47vw;
+    background-color: var(--color2);
+    @include pc{
+      margin: unset;
+      width: 57%;
+      flex-shrink: 0;
+      aspect-ratio: 824/549;
+      max-height: 549px;
+    }
+  }
+}

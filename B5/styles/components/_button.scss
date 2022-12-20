@@ -1,0 +1,31 @@
+.btn {
+  height: 9vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+  color: #fff;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2.3vw;
+  font-weight: 500;
+  padding: 0 5.2vw;
+  @include pc {
+    padding: 0 40px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  &--yel {
+    background-color: var(--color4);
+    color: var(--color1);
+  }
+
+  &--mt {
+    margin-top: 7.8vw;
+    @include pc {
+      margin-top: 60px;
+    }
+  }
+}

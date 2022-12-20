@@ -1,0 +1,21 @@
+@mixin pc {
+  @media screen and (min-width: 769px){
+    @content;
+  }
+}
+
+@mixin abCenter(){
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin abYCenter(){
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin abXCenter(){
+  left: 50%;
+  transform: translateX(-50%);
+}

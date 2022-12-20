@@ -1,0 +1,39 @@
+.title {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 7vw;
+  &--black{
+    color: #212529;
+  }
+  &--underline{
+    display: inline-block;
+    padding-bottom: 10px;
+    background-image: url("../assets/images/project_title_icon.svg");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 145%;
+  }
+  @include pc {
+    font-size: 64px;
+    text-align: left;
+    line-height: 1;
+  }
+}
+
+.para {
+  text-align: center;
+  font-size: 2.3vw;
+  color: #fff;
+  margin-top: 3vw;
+  &--black{
+    color: #212529;
+  }
+  @include pc {
+    margin-top: 24px;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 20px;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,15 @@
+.project{
+  &__bg{
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    width: 50%;
+    top: 10%;
+    @include pc{
+      width: 40%;
+      left: -10%;
+      @include abYCenter;
+    }
+  }
+}
+
